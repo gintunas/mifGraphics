@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fractal</title>
+    <link rel="stylesheet" href="fraktalas.css">
+</head>
+
+<body onresize="setCanvasWidth();">
+    <div class="form_div">
+        <h1 class="white_text">Fraktalas</h1>
+        <form id="fractal_form">
+            <div class="form_elements_div">
+                <label class="white_text instructions_label">Įrašykite žingsnių skaičių: </label>
+                <input id="input1" required size="20" type="text" pattern="^(?:[1-9]|10)$" maxlength="2">
+                <button type="submit" id="submitButton">Patvirtinti</button>
+            </div>
+        </form>
+    </div>
+    <div class="canvas_div">
+        <canvas id="canvas">
+        </canvas>
+    </div>
+    <script type="text/javascript" src="fraktalas.js"></script>
+</body>
+
+</html>
