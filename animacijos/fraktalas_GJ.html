@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fractal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onresize="setCanvasWidth();">
+    <div class="form_div">
+        <h1 class="white_text">Fraktalas</h1>
+        <form id="fractal_form">
+            <div class="form_elements_div">
+                <label class="white_text instructions_label">Įrašykite žingsnių skaičių: </label>
+                <input id="input1" required size="20" type="text" pattern="^(?:[1-9]|10)$" maxlength="2">
+                <button type="submit" id="submitButton">Patvirtinti</button>
+            </div>
+        </form>
+        <h2 class="white_text animation_text">Animacijos</h2>
+        <div class="animation_div">
+            <button class="animation-button" onclick="anim(1);">1 transformacija</button>
+            <button class="animation-button" onclick="anim(2);">2 transformacija</button>
+            <button class="animation-button" onclick="anim(3);">3 transformacija</button>
+            <button class="animation-button" onclick="anim(4);">4 transformacija</button>
+        </div>
+        <div class="all_div">
+            <button class="animation-button" onclick="anim(5);">Visos</button>
+        </div>
+        <div class="all_div">
+            <button class="animation-button start_button" onclick="startAnim();">Pradėti animaciją</button>
+        </div>
+    </div>
+    <div class="canvas_div">
+        <canvas id="canvas">
+        </canvas>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
